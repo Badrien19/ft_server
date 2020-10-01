@@ -33,7 +33,10 @@ apt-get install -y php-curl php-gd php-intl php-mbstring php-soap php-xml php-xm
 #WORKDIR /home/docker
 COPY ./default.conf .
 COPY ./start.sh .
+COPY ./wp-config.php .
+COPY ./config.inc.php .
 
-CMD bash ./start.sh
 EXPOSE 80
 EXPOSE 443
+
+CMD ["bash"]
