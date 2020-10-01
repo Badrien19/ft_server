@@ -8,17 +8,19 @@
 - [x] Wordpress
 - [x] Phpmyadmin
 - [x] Mysql
-- [] Clean to src/
+- [ ] Clean to src/
 
 # COMMAND
 
-"docker build -t *nomimage* ." to create image
+"docker build -t *nomimage* .": to create image
 
-"docker run -d -p 80:80 -p 443:443 --name=*nomconteneur* *nomimage*" (--name not requiert)
+"docker run -d -p 80:80 -p 443:443 --name=*nomconteneur* *nomimage*": (--name not requiert) 
 To lauch in background
+
 or
-"docker run -it -p 80:80 -p 443:443 *nomimage* bash"
+
+"docker run -it -p 80:80 -p 443:443 *nomimage* bash":
 To lauch with interraction, should "sh start.sh" to work
 
-"docker exec -it *nomconteneurouid* bash"
+"docker exec -it *nomconteneurouid* bash":
 for acces in background
