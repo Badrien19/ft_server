@@ -5,18 +5,20 @@
 - [x] Nginx
 - [x] Certificat SSL
 - [x] URL redirection
-- [ ] Wordpress
-- [ ] Phpmyadmin
-- [ ] Mysql
+- [x] Wordpress
+- [x] Phpmyadmin
+- [x] Mysql
+- [] Clean to src/
 
 # COMMAND
 
-docker build -t *nomimage* .
+"docker build -t *nomimage* ." to create image
 
-docker run -d -p 80:80 --name=*nomconteneur* *nomimage*
+"docker run -d -p 80:80 -p 443:443 --name=*nomconteneur* *nomimage*" (--name not requiert)
+To lauch in background
 or
-docker run -i -p 80:80 *nomimage* bash
+"docker run -it -p 80:80 -p 443:443 *nomimage* bash"
+To lauch with interraction, should "sh start.sh" to work
 
-docker run -i -p 80:80 -p 443:443 *nomimage* bash --> https fonctionne
-
-docker exec -ti *nomconteneurouid* bash
+"docker exec -it *nomconteneurouid* bash"
+for acces in background
