@@ -2,12 +2,12 @@
 
 # TO DO
 
-[X] Nginx
-[X] Certificat SSL
-[X] URL redirection
-[ ] Wordpress
-[ ] Phpmyadmin
-[ ] Mysql
+- [x] Nginx
+- [x] Certificat SSL
+- [x] URL redirection
+- [ ] Wordpress
+- [ ] Phpmyadmin
+- [ ] Mysql
 
 # COMMAND
 
