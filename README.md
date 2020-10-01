@@ -1,5 +1,16 @@
 # ft_server
 
+# TO DO
+
+[X] Nginx
+[X] Certificat SSL
+[X] URL redirection
+[ ] Wordpress
+[ ] Phpmyadmin
+[ ] Mysql
+
+# COMMAND
+
 docker build -t *nomimage* .
 
 docker run -d -p 80:80 --name=*nomconteneur* *nomimage*
