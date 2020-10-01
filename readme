@@ -1,22 +1,0 @@
-DOCKER 
-
-docker run heels world -> test  docker run -it --rm -d -p 8080:80 --name web nginx -> lancer page nginx
-
-Dock-machine ip -> ip de la page cree
-
-
-“Docker build -t server .” —> cree l’image
-
-“Docker images” —>  Vérifie les image
-
-“Docker rmi *nomimage*” —> delete images
-
-“docker run -d -p 80:80 --name=*nomconteneur* *nomimage*”
-
-“docker ps -a” —> liste de conteneur (-a pour afficher les arrêter ?)
-
-docker stop *nomconteneurouid* —> arrêter le conteneur
-docker rm $(docker ps -a -q —> delete conteneur
-
-docker exec -ti *nomconteneurouid* bash —> acceder au bash du conteneur
---> exit quitter le conteneur
