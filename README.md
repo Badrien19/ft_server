@@ -15,6 +15,7 @@ phpMyadmin
 user: wordpress_user
 password: password
 
+(Can be change in wp-config.php)
 # COMMAND
 
 "docker build -t *nomimage* .": to create image
