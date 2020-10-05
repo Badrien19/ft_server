@@ -36,8 +36,11 @@ mv ./config.inc.php var/www/localhost/phpmyadmin
 chmod 660 /var/www/localhost/phpmyadmin/config.inc.php
 chown -R www-data:www-data /var/www/localhost/phpmyadmin
 service php7.3-fpm start
-echo "GRANT ALL ON *.* TO 'badrien'@'localhost' IDENTIFIED BY '1234'" | mysql -u root
-echo "FLUSH PRIVILEGES;" | mysql -u root
+#echo "GRANT ALL ON *.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'password'" | mysql -u root
+#echo "FLUSH PRIVILEGES;" | mysql -u root
+
+echo "GRANT ALL PRIVILEGES ON phpmyadmin.* TO 'pma'@'localhost' IDENTIFIED BY 'pmapass';" | mysql -u root
+echo "FLUSH PRIVILEGES;" mysql -u root
 
 #WORDPRESS
 wget https://wordpress.org/latest.tar.gz
@@ -51,7 +54,6 @@ service nginx start
 service php7.3-fpm restart
 service mysql restart
 
-
-# to not close
+# to not close server
 #sleep infinity & 
 #wait

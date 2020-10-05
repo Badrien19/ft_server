@@ -31,10 +31,10 @@ apt-get install -y php-curl php-gd php-intl php-mbstring php-soap php-xml php-xm
 #RUN ln -s /etc/nginx/sites-available/ft_server.com /etc/nginx/sites-enabled/ft_server.com
 #ENTRYPOINT /home/docker/script/service_start.sh
 #WORKDIR /home/docker
-COPY ./default.conf .
-COPY ./start.sh .
-COPY ./wp-config.php .
-COPY ./config.inc.php .
+COPY ./srcs/default.conf .
+COPY ./srcs/start.sh .
+COPY ./srcs/wp-config.php .
+COPY ./srcs/config.inc.php .
 
 EXPOSE 80
 EXPOSE 443
