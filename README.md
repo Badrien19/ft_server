@@ -8,7 +8,7 @@
 - [x] Wordpress
 - [x] Phpmyadmin
 - [x] Mysql
-- [ ] Clean to src/
+- [x] Clean to src/
 # LOG
 
 phpMyadmin
